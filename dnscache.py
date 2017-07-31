@@ -11,9 +11,9 @@ def tumislem(domain):
 		nsmatch = re.findall(nspattern,nsbul)
 		for nscikler in nsmatch:
 			print "NS Adres="+nscikler
-		nameserver1=nsmatch[1]
+		nameserver1=nsmatch[0]
 		if nameserver1:
-			print "NS1 Adres", nameserver1
+			print "işlem yapilacak NS1 Adres:", nameserver1
 	except:
 		print "hata oluştu, işlem durduruldu"
 		exit()
